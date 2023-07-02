@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figuras-DOM Viviana Baron</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="cont-botones">
+        <h2>INTERACIONES</h2>
+        <button onclick="circulo()">CIRCULO</button>
+        <button onclick="rectangulo()">RECTANGULO</button>
+        <button onclick="triangulo()">TRIANGULO</button>
+        <button onclick="girar()">GIRAR</button>
+        <button onclick="arriba()">ARRIBA</button>
+        <button onclick="abajo()">ABAJO</button>
+        <button onclick="izquierdo()">IZQUIERDO</button>
+        <button onclick="derecho()">DERECHO</button>
+        <button onclick="ocultar()">OCULTAR</button>
+        <button onclick="gif()">GIF</button>
+        <button onclick="degradado()">DEGRADADO</button>
+        <button onclick="panel()">PANEL LATERAL</button>
+        <button onclick="superior()">PANEL SUPERIOR</button>
+      </div>
+      <div class="cont-figura">
+        <h2>FIGURA</h2>
+        <div id="figura" class="Circulo"></div>
+        <div id="figura" class="Rectangulo"></div>
+        <div id="figura" class="Triangulo"></div>
+        <div id="figura" class="Girar"></div>
+        <div id="figura" class="Arriba"></div>
+        <div id="figura" class="Abajo"></div>
+        <div id="figura" class="Izquierda"></div>
+        <div id="figura" class="Derecho"></div>
+        <div id="figura" class="Ocultar"></div>
+        <div id="figura" class="Gif"></div>
+        <div id="figura" class="Degradado"></div>
+        <div id="figura" class="Panel"></div>
+        <div id="figura" class="Superior"></div>
+      </div>
+    </section>
+
+    <div class="panelIzq">
+      <a href="#" class="close" onclick="panel()">X</a>
+
+      <h3>MENU PRINCIPAL</h3>
+      <ul>
+        <a href="#">INICIO</a>
+        <a href="#">NOSOTROS</a>
+        <a href="#">PRODUCTOS</a>
+        <a href="#">CONTANTOS</a>
+      </ul>
+    </div>
+
+    <div class="panelsSP">
+      <a href="#" class="close1" onclick="superior()">X</a>
+
+      <img src="img/pexels-pixabay-163046.jpg" alt="imagen1" />
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
+/*

@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/pexels-ünsal-demirbaş-23547.jpg");
+  background-size: cover;
+}
+
+section {
+  width: 90%;
+  border: 2px solid crimson;
+  margin: 40px auto;
+  display: flex;
+}
+section .cont-botones {
+  width: 50%;
+  min-height: 500px;
+  text-align: center;
+  padding: 40px 20px;
+  border: 2px solid crimson;
+  backdrop-filter: blur(5px);
+}
+
+section .cont-figura {
+  width: 50%;
+  min-height: 500px;
+  text-align: center;
+  padding: 40px 20px;
+  border: 2px solid crimson;
+  backdrop-filter: blur(5px);
+}
+
+h2 {
+  font-size: 26px;
+  /*font-family: traerelos de ggole forms;*/
+  margin-bottom: 50px;
+}
+
+.cont-botones button {
+  padding: 12px 30px;
+  font-size: 20px;
+  background: transparent;
+  color: rgb(159, 226, 128);
+  border: 2px solid cyan;
+  margin: 10px;
+  transition: 0.4s;
+}
+
+.cont-botones button:hover {
+  background: crimson;
+  color: blueviolet;
+}
+#figura {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: crimson;
+  border: 2px solid crimson;
+  margin: 10px auto;
+  transition: 0.1s;
+}
+
+#figura.circulo {
+  border-radius: 50%;
+  background: rgb(20, 50, 220);
+}
+
+#figura.retangulo {
+  width: 450px;
+  height: 250px;
+  background-color: aquamarine;
+}
+
+#figura.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 110px solid transparent;
+  border-right: 110px solid transparent;
+  border-bottom: 220px solid rgb(18, 188, 95);
+  background-color: rgb(255, 140, 0);
+}
+
+#figura.girar {
+  width: 220px;
+  height: 220px;
+  background-color: rgb(116, 117, 47);
+  transition: transform 5s ease;
+  transform: rotate(-360deg);
+}
+
+#figura.arriba {
+  width: 220px;
+  height: 220px;
+  background-color: rgb(205, 79, 10);
+  transition: transform 5s ease;
+  transform: translateY(-100px);
+}
+
+#figura.abajo {
+  width: 220px;
+  height: 220px;
+  background-color: rgb(163, 205, 10);
+  transition: transform 5s ease;
+  transform: translateY(100px);
+}
+
+#figura.izquierda {
+  width: 220px;
+  height: 220px;
+  background-color: rgb(10, 189, 205);
+  transition: transform 5s ease;
+  transform: translateX(-50px);
+}
+
+#figura.derecha {
+  width: 220px;
+  height: 220px;
+  background-color: rgb(205, 10, 101);
+  transition: transform 5s ease;
+  transform: translateX(50px);
+}
+
+#figura.ocultar {
+  width: 220px;
+  height: 220px;
+  background-color: rgb(205, 10, 10);
+  transition: opacity 5s ease;
+  opacity: 0;
+}
+
+/*#figura.gif{
+    width: 220px;
+    height: 220px;
+    background-color: rgb(205, 10, 10);
+    transition: opacity 5s ease;
+    opacity: 0;
+}*/
+#figura.degradado {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(
+    to bottom,
+    rgb(10, 36, 205),
+    rgb(78, 10, 205),
+    rgb(55, 181, 59)
+  );
+}
+
+#figura.degradado {
+  width: 220px;
+  height: 220px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panelIzq {
+  width: 350px;
+  height: 100vh;
+  position: absolute;
+  left: -450px;
+  top: 0;
+  z-index: 999;
+  background: url(../img/pexels-edward-jenner-4252672.jpg);
+  padding: 50px 40px;
+  transition: 0.5s;
+}
+
+.panelIzq h3 {
+  font-size: 30px;
+  color: rgb(17, 201, 201);
+}
+
+.panelIzq ul a {
+  display: block;
+  padding: 10px 15px;
+  margin: 8px 0;
+  max-width: 250px;
+  background: blue;
+  color: bisque;
+}
+
+.panelIzq.activo {
+  left: 0;
+}
+
+.close {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  color: grey;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.panelsSP {
+  width: 0%;
+  height: 0vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background: rgb(230, 141, 141);
+  transition: 0.5s;
+}
+
+.panelsSP.activo1 {
+  width: 100%;
+  height: 100vh;
+}
+
+.close1 {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  color: grey;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.panelsSP h3 {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.panelsSP img {
+  top: 10px;
+  padding: 20px 30px;
+  width: 80%;
+  height: 80%;
+  background-size: cover;
+}
+
+/*hacia la ziquierda 360 grados girar
+tranform rolate ()
+tranform : tranlaty -y ()
+tranform : tranlaty -x ()
+como ocultar en css
+linear-gradient "3 colores en degradado"
+*/
